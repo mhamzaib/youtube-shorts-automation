@@ -51,3 +51,25 @@ youtube_automation/
 ├── downloaded_cc_videos/             # Local temporary storage for collected videos
 
 └── processed_videos/                 # Local temporary storage for generated videos/audio
+
+
+## Secrets
+To ensure the security of personal API keys and credentials, the following files must NOT be committed to the Git repository. These files contain sensitive information that should remain private.
+
+Files to Exclude from Repository:
+
+`.env`
+
+This file stores your YOUTUBE_API_KEY, GEMINI_API_KEY, and the GOOGLE_TTS_SERVICE_ACCOUNT_PATH. Exposing these keys could lead to unauthorized access to your Google Cloud services and incur unexpected costs.
+
+`client_secrets.json`
+
+This JSON file contains your Google OAuth 2.0 Client ID and Client Secret. It's crucial for authenticating with Google Drive and YouTube for uploads. Sharing this would compromise your Google account's access.
+
+`google-tts-service-account.json`
+
+This JSON file contains the private key for your Google Cloud Text-to-Speech service account. It grants programmatic access to the TTS API.
+
+`token.json`
+
+This file is generated automatically after your first successful Google API authentication. It stores your OAuth access and refresh tokens. It should always remain local to your VM and never be shared.
