@@ -1,10 +1,10 @@
 # youtube-shorts-automation
 Attempt at Automated YouTube Shorts Creation
 
-##Purpose
+## Purpose
 This project is an attempt to build a fully automated pipeline for generating and uploading YouTube Shorts. It aims to combine AI-generated content (via Google's Gemini API) with Creative Commons background videos, automatically handling narration (Google Cloud Text-to-Speech), video editing (MoviePy), and YouTube uploads. The entire system is designed to run on a Google Cloud "Always Free" VM, exploring the possibilities of hands-free content creation.
 
-##Proposed Structure
+## Proposed Structure
 The system will leverage Google's Gemini AI for script generation, Google Cloud Text-to-Speech for narration, MoviePy for video editing, and yt-dlp for background video collection, all hosted on a Google Cloud "Always Free" tier VM.
 This project is designed to be refactored into modular components for better readability, maintainability, and reusability.
 
