@@ -1,0 +1,7 @@
+# .gitignore
+.env
+client_secrets.json
+*.json # Catches all JSON files, including google-tts-service-account.json and token.json
+# If you have other JSON files you DO want to track, be more specific like:
+# google-tts-service-account-*.json
+# token.json
